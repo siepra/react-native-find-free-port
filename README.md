@@ -11,11 +11,11 @@ npm install react-native-find-free-port
 ## Usage
 
 ```js
-import FindFreePort from "react-native-find-free-port";
+import FindFreePort from 'react-native-find-free-port';
 
 // ...
 
-const result = await FindFreePort.multiply(3, 7);
+const result = await FindFreePort.getFirstStartingFrom(9010);
 ```
 
 ## Contributing
