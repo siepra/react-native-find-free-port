@@ -1,7 +1,7 @@
 @objc(FindFreePort)
 class FindFreePort: NSObject {
 
-    @objc(getFirstStartingFrom:withPort:withResolver:withRejecter:)
+    @objc(getFirstStartingFrom:withResolver:withRejecter:)
     func getFirstStartingFrom(port: in_port_t, resolve:RCTPromiseResolveBlock,reject:RCTPromiseRejectBlock) -> Void {
         for i in port..<65000 {
             let (result, _) = checkPort(port: port)
